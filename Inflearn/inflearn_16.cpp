@@ -1,4 +1,4 @@
-//Inflearn 16¹ø¹®Ç×
+//Inflearn 16Â¹Ã¸Â¹Â®Ã‡Ã—
 #include <stdio.h>
 
 int main() {
