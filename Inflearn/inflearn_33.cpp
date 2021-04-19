@@ -1,12 +1,12 @@
 //Inflearn #33
-//°è¼öÁ¤·Ä(³»¸²Â÷¼ø)
+//ê³„ìˆ˜ì •ë ¬(ë‚´ë¦¼ì°¨ìˆœ)
 #include <stdio.h>
 
 int main() {
 	int N;
 	scanf("%d", &N);
 
-	int nums[101] = { 0, }; // 0Á¡ ~ 100Á¡±îÁö
+	int nums[101] = { 0, }; // 0ì  ~ 100ì ê¹Œì§€
 
 	int score = 0;
 	for (int i = 0; i < N;i++) {
