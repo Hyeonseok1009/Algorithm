@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// µğÅ×ÀÏÀº ¼±ÅÃÀÌ ¾Æ´Ï¶ó ÇÊ¼ö´Ù. ¹İµå½Ã ½Å°æ½á¼­ ±â·ÏÇÏ¿©¾ßÇÑ´Ù.
+// ë””í…Œì¼ì€ ì„ íƒì´ ì•„ë‹ˆë¼ í•„ìˆ˜ë‹¤. ë°˜ë“œì‹œ ì‹ ê²½ì¨ì„œ ê¸°ë¡í•˜ì—¬ì•¼í•œë‹¤.
 
 int number = 10;
 int data[] = { 9,4,5,8,7,6,2,10,1,3};
@@ -12,7 +12,7 @@ void quicksort(int data[], int start, int end) {
 	int left = start + 1;
 	int right = end;
 	int tmp = 0;
-	while (left <= right) {			/* ±³Â÷ÇÏ±â Àü±îÁö*/
+	while (left <= right) {			/* êµì°¨í•˜ê¸° ì „ê¹Œì§€*/
 		//printf("A");
 		while (left <= end && data[left] <= data[pivot]) { left++; 
 		}
@@ -29,10 +29,9 @@ void quicksort(int data[], int start, int end) {
 			data[left] = data[right];
 			data[right] = tmp;
 		}
-
-		quicksort(data, start, right - 1);
-		quicksort(data, right + 1, end);
 	}
+	quicksort(data, start, right - 1);
+	quicksort(data, right + 1, end);
 }
 
 int main() {
