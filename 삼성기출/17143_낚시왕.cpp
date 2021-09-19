@@ -2,7 +2,6 @@
 #include <vector>
 
 using namespace std;
-int dir[4][2] = {{-1,0},{1,0},{0,-1},{0,1}};
 
 int R,C,M;
 
@@ -34,7 +33,7 @@ int main() {
     int time = 0;
     int ans = 0; 
     while(time < C){
-        //ÀÌµ¿
+        //Ã€ÃŒÂµÂ¿
         int c_pos = time + 1;
        /* cout <<"["<< c_pos<<"]"<<endl;
         for(auto sha : sharks){
@@ -43,7 +42,7 @@ int main() {
             }
         }
         cout << endl;*/
-        //³¬½Ã
+        //Â³Â¬Â½Ãƒ
         for(int i = 1; i <= R; i++){
             if(map[i][c_pos] == 1){
                 for(auto sh = sharks.begin(); sh != sharks.end() ; sh++){
